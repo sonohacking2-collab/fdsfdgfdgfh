@@ -1,0 +1,140 @@
+body{
+  margin:0;
+  background:#0f0f0f;
+  font-family:Arial, sans-serif;
+  color:#fff;
+}
+
+/* ================= TOP BAR ================= */
+.topbar{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:60px;
+  background:#111;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 12px;
+  z-index:1000;
+  border-bottom:1px solid #222;
+}
+
+.logo{
+  font-size:18px;
+  font-weight:bold;
+  color:red;
+}
+
+.search-box{
+  flex:1;
+  margin:0 8px;
+  padding:6px 10px;
+  border-radius:8px;
+  border:none;
+  font-size:14px;
+}
+
+.menu{
+  font-size:24px;
+}
+
+/* ================= FEED ================= */
+.feed{
+  margin-top:65px;
+  padding:10px;
+}
+
+.video-card{
+  position:relative;
+  margin-bottom:25px;
+}
+
+/* Thumbnail */
+.thumb-wrapper{
+  position:relative;
+}
+
+.video-thumb{
+  width:100%;
+  border-radius:12px;
+  display:block;
+}
+
+/* Play button */
+.play-btn{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:60px;
+  height:60px;
+  background:rgba(0,0,0,0.6);
+  border-radius:14px;
+}
+
+.play-btn:after{
+  content:"";
+  position:absolute;
+  left:22px;
+  top:16px;
+  border-style:solid;
+  border-width:14px 0 14px 22px;
+  border-color:transparent transparent transparent white;
+}
+
+/* LIVE badge */
+.live-badge{
+  position:absolute;
+  top:10px;
+  left:10px;
+  background:red;
+  padding:4px 8px;
+  font-size:12px;
+  font-weight:bold;
+  border-radius:4px;
+}
+
+/* Channel logo + name + views */
+.channel-info{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:6px;
+}
+
+.channel-left{
+  display:flex;
+  align-items:center;
+}
+
+.channel-logo{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  margin-right:8px;
+}
+
+.channel-name{
+  font-size:14px;
+  font-weight:bold;
+}
+
+/* Video title */
+.video-title{
+  font-size:14px;
+  margin:2px 0;
+}
+
+/* Views + time */
+.video-stats{
+  font-size:12px;
+  color:#aaa;
+}
+
+/* Make whole feed clickable */
+.main-link{
+  text-decoration:none;
+  color:inherit;
+}
